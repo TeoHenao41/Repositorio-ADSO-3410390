@@ -4,7 +4,7 @@
 
 body {
     align-items: center;
-    background: linear-gradient(45deg, rgb(114, 8, 128), rgb(24, 23, 24));
+    background: linear-gradient(45deg, #6700ed, black);
     color: #fff9;
     display: flex;
     font-family: Poppins, serif;
@@ -24,50 +24,57 @@ body {
         position: fixed;
         top: 8px;
         transform: scale(.8);
-        transition: all 0.4s ease-in;
+        transition: transform 0.4s ease-in,
+                    opacity 0.4s 0.4s ease-in;
         width: 40px;
         &:hover {
             transform: scale(1.1);
             opacity: 1;
         }
-    }
-
-    &.mainmenu.layout{
-        background: linear-gradient(45deg);
-        main{
-            header{
-                h1{
-                    margin: 0;
-                }
-                h3{
-                    font-weight: 200;
-                }
-                img{
-                    background-color: #0000;
-                }
-            }
-            menu{
-                a:is(:link, :visited){
-                span{
-                    background-color: #0000
-                }
-                aside{
-                    h3{
-                        font-size: 1rem;
-                    }
-                }
-                &:is(:hover){
-                    background-color: rgb(196, 29, 190);
-                }
-            }
+        a:is(:link, :visited) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
-}
+
+    &.mainmenu.layout {
+         background: linear-gradient(45deg, #6700ed, black);
+         main {
+            header {
+                h1 {
+                    margin: 0;
+                }
+                h3 {
+                    font-weight: 200;
+                }
+                img {
+                    background-color: #0003;
+                }
+            }
+            menu {
+                gap: 0.4rem;
+                a:is(:link, :visited) {
+                    span {
+                        background-color: #460096;
+                    }
+                    aside {
+                        h3 {
+                            font-size: 1rem;
+                        }
+                    }
+                    &:is(:hover) {
+                        background-color: #460096;
+                    }
+                }
+            }
+         }
+    }
 
     main {
         background: linear-gradient(to bottom, #0009, #0000);
         border-radius: 0.4rem;
-        min-width: 380px;
+        max-width: 380px;
         padding: 1rem;
     }
     /* Main Menu */
@@ -75,13 +82,13 @@ body {
         main {
             header {
                 h1 {
-                    border-bottom: 2px solid rgba(235, 231, 231, 0.6);
+                    border-bottom: 2px solid #fff9;
                     font-size: 3.2rem;
                     font-weight: 200;
                     text-align: center;
                 }
                 img {
-                    border: 4px solid rgba(228, 220, 220, 0.6);
+                    border: 4px solid #fff9;
                     border-radius: 50%;
                     display: flex;
                     height: 280px;
@@ -129,15 +136,16 @@ body {
                     display: flex;
                     padding: 0.6rem;
                     text-decoration:none;
-                    transition: all 0.4s ease-in;
+                    transition: transform 0.4s ease-in,
+                                background 0.4s 0.2s ease-in;
                     width: 320px;
                     &:is(:hover) {
-                        background-color: rgb(0, 0, 0);
+                        background-color: #6700ed;
                         transform: scale(1.04) translateX(18px);
                     }
                     span {
                         align-items: center;
-                        background-color: rgb(24, 22, 23);
+                        background-color: #6700ed;
                         border-radius: 50%;
                         display: flex;
                         justify-content: center;
@@ -161,7 +169,7 @@ body {
                             font-weight: 400;
                         }
                         small {
-                            color: rgba(235, 229, 229, 0.4);
+                            color: #fff6;
                             font-size: 0.8rem;
                             font-weight: 300;
                         }
