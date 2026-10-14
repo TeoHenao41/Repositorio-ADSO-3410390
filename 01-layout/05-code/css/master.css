@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --color-accentdark: #333333;
+    --color-vibrantpurple: #9c27b0;
+    --color-lightgray: #e0e0e0;
+    --foint-headings: "IBM Plex Sans", serif;
+    --foint-body: inter, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--color-lightgray);
+    color: var(--color-accentdark);
+    font-family: var(--foint-body);
+
+    main {
+        min-height: 100dvh;
+
+        header#navbar {
+            align-items: center;
+            background-color: black;
+            border-bottom: 1px solid var(--color-lightgray);
+            display: flex;
+            left: 0;
+            height: 120;
+            justify-content: space-between;
+            padding-inline: 1.4rem;
+            position: fixed;
+            top: 0;
+            width: 100%;
+
+            img.logo {
+                height: 80px;
+            }
+
+            
+            nav.options {
+                display: flex;
+                gap: 2rem;
+                a:is(:link, :visited){
+                    font-size: 1.4rem;
+                    font-weight: 500;
+                    text-decoration: none;
+                    transition: transform 0.2s ease-in;
+                    &:not(.active):hover {
+                        transform: translateY(-6px);
+                    }
+                    &.active {
+                        color: var(--color-lightgray);
+                        border-bottom: var(--color-lightgray);
+                    }
+                }
+            }
+        }
+
+
+
+    section#about {
+    align-items: center;
+    background: url(../images/Vector.png) no-repeat center / cover;
+    display: flex;
+    flex-direction: row;              
+    justify-content: space-between;   
+    gap: 2rem;
+    margin-top: 0;
+    height: 500px;                    
+    padding: 0 5%;                    
+    color: white;                     
+}
+
+.about-text {
+    text-align: left;
+    max-width: 50%;
+}
+
+.about-text h2,
+.about-text p {
+    color: white;
+}
+}
+    
+        }
+    
