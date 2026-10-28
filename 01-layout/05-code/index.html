@@ -1,41 +1,208 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Beat Stream</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/master.css">
-</head>
-<body>
+  </head>
+  <body>
+
+    <aside id="sidebar">
+      <a href="#inicio" class="brand">
+        <img class="logo" src="images/Frame 1.png" alt="Beat Stream" />
+      </a>
+
+      <nav class="options">
+        <p class="label">Menu</p>
+        <a href="#inicio" class="active">⌂ Inicio</a>
+        <a href="#generos">Acceso Rapido</a>
+        <a href="#recientes">Generos</a>
+        <a href="#recomendado">Reproducido Recientemente</a>
+        <a href="#premium">Recomendado para ti</a>
+
+        <p class="label">Tus playlists</p>
+        <a href="#acceso-rapido">+ Crear playlist</a>
+        <a href="#recomendado">Daily Mix</a>
+        <a href="#favoritos">Favoritos</a>
+        <a href="#artistas">Para entrenar</a>
+      </nav>
+
+      <div class="premium-box" id="premium">
+        <small>Cuenta gratuita</small>
+        <strong>Actualiza a Premium</strong>
+        <small>Sin anuncios · Más música</small>
+      </div>
+    </aside>
+
     <main>
-        <header id="navbar">
-            <img class="logo" src="images/Frame 1.png" alt="Logo">
-            <nav class="options">
-                <a href="#Inicio">Inicio</a>
-                <a href="#AccesoRapido">Acceso Rapido</a>
-                <a href="#generos">Generos</a>
-                <a href="#ReproducidosRecientemente">Reproducidos Recientemente</a>
-                <a href="#Recomendadoparati">Recomendado para ti</a>
-                <a href="#favoritos">Favoritos</a>
-                <a href="#tusartistas">Tus Artistas</a>
-            </nav>
-        </header>
-        <section id="about">
+      <header id="topbar">
+        <h1 id="inicio">INICIO</h1>
+        <input
+          type="search"
+          placeholder="Buscar canciones, artistas o álbumes"
+        />
+       <img class="avatar" src="images/image.png" alt="Mi perfil">
+      </header>
 
-            <h2>Inicio</h2>
-                <p>
-                    TU MÚSICA, TU MOMENTO
-                </p>
-                <img class="logo-ful" src="images/Frame 2.png" alt="Logo">
-                <p>
-                    Descubre tu próximo sonido favorito.
-                </p>
+      
+      <section class="hero">
+        <div>
+          <small>TU MÚSICA, TU MOMENTO</small>
+          <h2>Descubre tu próximo sonido favorito.</h2>
+          <p>Explora playlists seleccionadas para cada estado de ánimo.</p>
+          <a href="#generos" class="btn-small">Explorar ahora</a>
+        </div>
+        <button class="play-big" aria-label="Reproducir">▶</button>
+      </section>
 
-            
-        </section>
+      <!-- Acceso rápido -->
+      <section id="acceso-rapido">
+        <div class="section-head">
+          <h2>Acceso rápido</h2>
+          <a href="#">Ver todo →</a>
+        </div>
+        <div class="grid-5">
+          <article class="card">
+            <img src="images/ndslqvpm.jpg" alt="" />
+            <h3>NSLQVAPM</h3>
+            <p>Playlist · 22 canciones</p>
+          </article>
+          <article class="card">
+            <img src="images/dtmf.jpg" alt="" />
+            <h3>DTMF</h3>
+            <p>Playlist · 17 canciones</p>
+          </article>
+          <article class="card">
+            <img src="images/buho.png" alt="" />
+            <h3>EUPHANASIA</h3>
+            <p>Playlist · 15 canciones</p>
+          </article>
+          <article class="card">
+            <img src="images/exodo.jpg" alt="" />
+            <h3>ÉXODO</h3>
+            <p>Playlist · 18 canciones</p>
+          </article>
+          <article class="card">
+            <img src="images/asd0.jpg" alt="" />
+            <h3>$B4L2</h3>
+            <p>Playlist · 17 canciones</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Géneros -->
+      <section id="generos" class="generos">
+        <div>
+          <h2>Géneros</h2>
+          <p>Encuentra música según tu estilo.</p>
+        </div>
+        <div class="pills">
+          <button class="pill">POP</button>
+          <button class="pill">ROCK</button>
+          <button class="pill active">RAP</button>
+          <button class="pill">JAZZ</button>
+          <button class="pill">ELECTRO</button>
+        </div>
+      </section>
+
+      <!-- Reproducidos recientemente -->
+      <section id="recientes">
+        <div class="section-head">
+          <h2>Reproducido recientemente</h2>
+          <a href="#">Ver todo →</a>
+        </div>
+        <div class="grid-3">
+          <article class="recent">
+            <img src="images/pumas.jpg" alt="" />
+            <div>
+              <h3>PUMAS</h3>
+              <p>Artist Name · Trueno, Milo J<br />Album · Turr4zo</p>
+            </div>
+            <button class="play-small" aria-label="Reproducir">▶</button>
+          </article>
+          <article class="recent">
+            <img src="images/gamina.jpg" alt="" />
+            <div>
+              <h3>GAMINA</h3>
+              <p>Artist Name · kris R<br />Album · El trap de Kolombia</p>
+            </div>
+            <button class="play-small" aria-label="Reproducir">▶</button>
+          </article>
+          <article class="recent">
+            <img src="images/fama.jpg" alt="" />
+            <div>
+              <h3>FAMA (Fuerza Regida)</h3>
+              <p>Artist Name · Chuy Montana<br />Album · No fue suerte</p>
+            </div>
+            <button class="play-small" aria-label="Reproducir">▶</button>
+          </article>
+        </div>
+      </section>
+
+      <!-- Recomendado / Favoritos / Tus artistas -->
+      <section class="grid-3 bottom">
+        <article class="panel" id="recomendado">
+          <h3>Recomendado para ti</h3>
+          <div class="row">
+            <img src="images/gervonta.jpg" alt="" />
+            <div>
+              <strong>Gervonta</strong>
+              <p>Artist Name · Peso Pluma</p>
+            </div>
+            <button class="play-small" aria-label="Reproducir">▶</button>
+          </div>
+          <div class="row">
+            <img src="images/depeapa.jpg" alt="" />
+            <div>
+              <strong>De Pe a Pa</strong>
+              <p>Artist Name · Granuja</p>
+            </div>
+            <button class="play-small" aria-label="Reproducir">▶</button>
+          </div>
+        </article>
+
+        <article class="panel" id="favoritos">
+          <h3>Favoritos</h3>
+          <div class="row">
+            <span class="num">1</span>
+            <img src="images/images.jpg" alt="" />
+            <div>
+              <strong>En la intimidad</strong>
+              <p>Artist Name · Ozuna</p>
+            </div>
+          </div>
+          <div class="row">
+            <span class="num">2</span>
+            <img src="images/images (1).jpg" alt="" />
+            <div>
+              <strong>Neo Roneo</strong>
+              <p>Artist Name · Rusowsky</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="panel" id="artistas">
+          <h3>Tus artistas</h3>
+          <div class="row">
+            <img class="round" src="images/badbo.jpg" alt="" />
+            <div>
+              <strong>Bad Bunny</strong>
+              <p>Última canción escuchada de el hace:</p>
+            </div>
+            <span class="time">2h</span>
+          </div>
+          <div class="row">
+            <img class="round" src="images/ab6761610000e5eb5fbe9b7dc7d9a2295bd6022c.jpg" alt="" />
+            <div>
+              <strong>Junior H</strong>
+              <p>Última canción escuchada de el hace:</p>
+            </div>
+            <span class="time">3h</span>
+          </div>
+        </article>
+      </section>
     </main>
-    <script src="js/app.js"></script>
-</body>
+  </body>
 </html>
-
